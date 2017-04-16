@@ -68,7 +68,7 @@ func:function()
 	});
 	new G.Tech({
 		name:'baking',
-		desc'@[firekeeper]s can now produce [bread] from baking [dough]//Unfortunately, yeast doesn\'\t exist yet. Matzoh, anyone?',
+		desc:'@[firekeeper]s can now produce [bread] from baking [dough]//Unfortunately, yeast doesn\'\t exist yet. Matzoh, anyone?',
 		icon:[0,3,'spicySheet'],
 		cost:{'insight':20},
 		req:{"cooking":true,{'grain processing':true},
