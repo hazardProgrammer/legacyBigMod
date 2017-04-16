@@ -31,7 +31,7 @@ func:function()
 	});
 	new G.Res({
 		name:'dough',
-		desc:'Made from combining 1 [flour] and 1 [water], dough is no longer hard or dry.",
+		desc:'Made from combining 1 [flour] and 1 [water], dough is no longer hard or dry.',
 		icon:[0,0,'spicySheet'],
 		turnToByContext:{'eat':{'health':0.05,'happiness':0.08},'decay':{'dough':0.6,'flour':0.3,'spoiled food':0.05}},
 		partOf:'food',
