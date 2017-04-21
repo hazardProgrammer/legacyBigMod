@@ -33,7 +33,7 @@ func:function()
 		name:'bread',
 		desc:'A pleasant-smelling baked good, made by baking flour',
 		icon:[0,4,'spicySheet'],
-		tuntToByContext:{'eat':{'health':0.2,'happiness':0.5},'decay'{'bread':0.95,'spoiled food':0.04}},
+		turnToByContext:{'eat':{'health':0.2,'happiness':0.5},'decay'{'bread':0.95,'spoiled food':0.04}},
 		partOf:'food',
 		category:'food',
 	});
