@@ -76,10 +76,10 @@ func:function()
 		startMode:'on',
 		req:{'rules of food':true},
 		effects:[
-			{type:'make part of',what:['herb'],parent:'food'};
+			{type:'make part of',what:['herb'],parent:'food'},
 		],
 		effectsOff:[
-			{type:'make part of',what:['herb'],parent:''};
+			{type:'make part of',what:['herb'],parent:''},
 		],
 		category:'food',
 	});
