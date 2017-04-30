@@ -5,9 +5,9 @@ name:'Big mod',
 author:'Hazard',
 desc:'A BIG mod.',
 engineVersion:1,
-manifest:'modManifest.js',
+manifest:'manifest.js',
 requires:['Default dataset*'],
-sheets:{'spicySheet':'http:i.imgur.com/owlnODu.png'},//temporary stylesheet
+sheets:{'styleSheet':'http:i.imgur.com/owlnODu.png'},//temporary stylesheet
 func:function()
 {
 	//The idea in this mod is to add a lot of stuff. This mod includes the bread mod.
@@ -16,7 +16,7 @@ func:function()
 	new G.Res({
 		name:'grain',
 		desc:'[grain] is a very hard, unforgiving food when eaten raw. You need a very powerful jaw.',
-		icon:[1,4,'spicySheet'],
+		icon:[1,4,'styleSheet'],
 		turnToByContext:{'eat':{'health':0.01,'happiness':0},'decay':{'spoiled food':0.75}},//this basically translates to : "when eaten, generate some health and happiness; when rotting, turn into either nothing or some spoiled food"
 		partOf:'food',
 		category:'food',
@@ -24,7 +24,7 @@ func:function()
 	new G.Res({
 		name:'flour',
 		desc:'Made from crushed [grain], made by [artistan]s. While not hard, it\'\s very dry.',
-		icon:[2,4,'spicySheet'],
+		icon:[2,4,'styleSheet'],
 		turnToByContext:{'eat':{'health':0.01,'happiness':0.01},'decay':{'flour':0.9,'spoiled food':0.05}},//that last part makes flour effectively have a 90% chance of simply not rotting (in effect, it decays into itself)
 		partOf:'food',
 		category:'food',
@@ -32,7 +32,7 @@ func:function()
 	new G.Res({
 		name:'bread',
 		desc:'A pleasant-smelling baked good, made by baking flour',
-		icon:[0,4,'spicySheet'],
+		icon:[0,4,'styleSheet'],
 		turnToByContext:{'eat':{'health':0.2,'happiness':0.5},'decay':{'bread':0.95,'spoiled food':0.04}},
 		partOf:'food',
 		category:'food',
@@ -56,14 +56,14 @@ func:function()
 	new G.Tech({
 		name:'grinding',
 		desc:'@[artisan]s can now produce [flour] from [grain].<br>This special process paves the way for baked goods.',
-		icon:[1,0,'spicySheet'],
+		icon:[1,0,'styleSheet'],
 		cost:{'insight':15},
 		req:{'tool-making':true},
 	});
 	new G.Tech({
 		name:'baking',
 		desc:'@[firekeeper]s can now produce [bread] from baking [flour].<br>Unfortunately, yeast doesn\'\t exist yet. Matzoh, anyone?',
-		icon:[0,3,'spicySheet'],
+		icon:[0,3,'styleSheet'],
 		cost:{'insight':20},
 		req:{"cooking":true,'grinding':true},
 	});
