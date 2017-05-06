@@ -5,7 +5,7 @@ name:'Big mod',
 author:'Hazard',
 desc:'A BIG mod.',
 engineVersion:1,
-manifest:'https://rawgit.com/hazardProgrammer/legacyBigMod/master/bigMod.js',
+manifest:'bigManifest.js',
 requires:['Default dataset*'],
 sheets:{'styleSheet':'http:i.imgur.com/owlnODu.png'},//temporary stylesheet
 func:function()
