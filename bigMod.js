@@ -7,7 +7,7 @@ desc:'A BIG mod.',
 engineVersion:1,
 manifest:'bigManifest.js',
 requires:['Default dataset*'],
-sheets:{'styleSheet':'http:i.imgur.com/owlnODu.png'},//temporary stylesheet
+sheets:{'styleSheet':'http://i.imgur.com/owlnODu.png'},//temporary stylesheet
 func:function()
 {
 	//The idea in this mod is to add a lot of stuff. This mod includes the bread mod.
